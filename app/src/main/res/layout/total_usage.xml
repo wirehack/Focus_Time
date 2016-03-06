@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/first"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Device Time"
+        android:textSize="28dp"
+        android:layout_gravity="center"
+        android:textColor="#000000" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="90dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp">
+        <info.hoang8f.widget.FButton
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:id="@+id/day"
+            fbutton:buttonColor="@color/fbutton_color_green_sea"
+            fbutton:shadowEnabled="false"
+            fbutton:cornerRadius="6dp"
+            android:text="Day"
+            android:textSize="12dp"
+            android:textAllCaps="false"/>
+        <info.hoang8f.widget.FButton
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:id="@+id/week"
+            android:layout_marginStart="60dp"
+            fbutton:buttonColor="@color/fbutton_color_green_sea"
+            fbutton:shadowEnabled="false"
+            fbutton:cornerRadius="6dp"
+            android:text="Week"
+            android:textSize="12dp"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+    android:id="@+id/line_chart"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp"></com.github.mikephil.charting.charts.LineChart>
+</LinearLayout>
